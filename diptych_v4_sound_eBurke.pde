@@ -5,6 +5,13 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
 
 import ddf.minim.*;
 
@@ -64,18 +71,18 @@ void setup () {
   lFiveSound = minim.loadFile("file.mp3");
 */
   //Load Image Button LEFT
-  lBFive = loadImage("lBFive.png");
-  lBFour = loadImage("lBFour.png");
-  lBThree = loadImage("lBThree.png");
-  lBTwo = loadImage("lBTwo.png");
-  lBOne = loadImage("lBOne.png");
+  lBFive = loadImage("newg.png");
+  lBFour = loadImage("newf.png");
+  lBThree = loadImage("newe.png");
+  lBTwo = loadImage("newd.png");
+  lBOne = loadImage("newc.png");
 
   //Load Image Button RIGHT
-  rBFive = loadImage("rBFive.png");
-  rBFour = loadImage("rBFour.png");
-  rBThree = loadImage("rBThree.png");
-  rBTwo = loadImage("rBTwo.png");
-  rBOne = loadImage("rBOne.png");
+  rBFive = loadImage("newe.png");
+  rBFour = loadImage("newd.png");
+  rBThree = loadImage("newc.png");
+  rBTwo = loadImage("newb.png");
+  rBOne = loadImage("newa.png");
 }
 void draw() {
   drawLeft();  
@@ -136,7 +143,7 @@ void keyPressed()
     rFive = loadImage("rFive.png");
     image(rFive, 460, 50);
     //rFiveSound.play();
-  }
+  } else { }
 }
 void drawLeft() {
   image(lBOne, 20, 300);
